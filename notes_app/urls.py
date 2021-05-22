@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')), 
     path('faq/', include('api.urls')), 
+    path('home/',  include('yellowpage.urls')),
     
      # add this line
 ]

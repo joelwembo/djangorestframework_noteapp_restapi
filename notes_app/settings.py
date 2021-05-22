@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +76,10 @@ WSGI_APPLICATION = 'notes_app.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default' : {
+      'ENGINE' : 'djongo',
+      'NAME' : 'notes_database'
+   }
 }
 
 

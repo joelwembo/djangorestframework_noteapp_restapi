@@ -14,7 +14,6 @@ def home(request):
 def login(request):
     username = "not logged in"
 
-    return render(request, 'yellowpage/login.html')
    
     if request.method == "POST":
           #Get the posted form

@@ -7,7 +7,7 @@ class Note(models.Model):
     author = models.CharField(max_length=100, default='joel wembo')
     username = models.CharField(max_length=100, default='joelwembo')
     link = models.CharField(max_length=100, default='https:google.com')
-    date_field = models.DateField(default=timezone.now(), max_length=150)
+    date_field = models.DateField(default=timezone.now, max_length=150)
 
     def __str__(self):
         return self.title

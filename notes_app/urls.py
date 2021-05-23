@@ -22,5 +22,6 @@ urlpatterns = [
     path('faq/', include('api.urls')), 
     path('home/',  include('yellowpage.urls')),
     
+    
      # add this line
 ]

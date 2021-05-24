@@ -25,3 +25,6 @@ django-admin startproject note_app .  # Note the trailing '.' character
 cd tutorial
 django-admin startapp api
 cd ..
+
+
+UI and UX : HTML and CSS

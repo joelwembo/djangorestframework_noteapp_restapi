@@ -12,7 +12,7 @@ git remote add origin https://github.com/joelwembo/django-website-rest-database.
 git branch -M main
 git push -u origin main
 
-
+Existing repo url : https://github.com/joelwembo/djangorestframework_noteapp_restapi.git
 For Ubuntu
 # Create the project directory
 mkdir tutorial

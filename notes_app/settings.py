@@ -25,9 +25,9 @@ SECRET_KEY = '2=i&e72esk2-k6&5my!^w8jk*o#&%o3@wvq@1(uw01be8_%df9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['151.106.113.214', 'http://jwappengine.com', 'https://jwappengine.com' , 'https://151.106.113.214:5000']
+# ALLOWED_HOSTS = ['151.106.113.214', 'http://jwappengine.com', 'https://jwappengine.com' , 'https://151.106.113.214:5000']
 
-
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [

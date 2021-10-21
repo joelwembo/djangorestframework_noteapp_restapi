@@ -64,7 +64,9 @@ python manage.py migrate
 
 Creating an admin user
 
-python manage.py createsuperuser
+python manage.py createsuperuser  or
+
+python manage.py createsuperuser --database=pools specify the database
 
 
 running
@@ -73,9 +75,8 @@ python manage.py runserver 0.0.0.0:5000
 
 Prepare Requirement doc for all tools and lib
 
-pip freeze 
-
-pip freeze > requirements.txt
+step 1 pip freeze 
+step 2 pip freeze > requirements.txt
 
 
 Managaning Multiple Database

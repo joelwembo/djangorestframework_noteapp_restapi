@@ -81,19 +81,19 @@ DATABASES = {
     'default' : { },
    'mongodb': {
         'ENGINE': 'djongo', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'notes_database'                   # Or path to database file if using sqlite3.
+        'NAME': 'notes_database'         # Or path to database file if using sqlite3.
     },
    'polls': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'sqlite3.db'                   # Or path to database file if using sqlite3.
     },
-    'customers': {
-        'NAME': 'customer_data',
-        'ENGINE': 'django.db.backends.mysql',
+    'customers': {                                # Database name
+        'NAME': 'customer_data',                  
+        'ENGINE': 'django.db.backends.mysql',     # the library in django
         'USER': 'mysql_cust',
-        'PASSWORD': 'veryPriv@ate',
+        'PASSWORD': 'veryPriv@ate',               # the password
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '3306',
+        'PORT': '3306',                           # the port may not be required
     },
     'replica1': {
         'NAME': 'replica1_name',

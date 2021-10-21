@@ -13,6 +13,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.urls import include, path
+
 from  api import views
 
 urlpatterns = [
@@ -20,7 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')), 
     path('faq/', include('api.urls')), 
+    path('polls/', include('polls.urls')),
     path('home/',  include('yellowpage.urls')),
+   
     
     
      # add this line

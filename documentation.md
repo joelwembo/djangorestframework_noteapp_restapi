@@ -71,3 +71,9 @@ python manage.py createsuperuser
 running
 
 python manage.py runserver 0.0.0.0:5000
+
+Prepare Requirement doc for all tools and lib
+
+pip freeze 
+
+pip freeze > requirements.txt

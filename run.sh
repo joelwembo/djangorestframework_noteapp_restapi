@@ -1,3 +1,16 @@
 echo 'Running the program'
 
-python manage.py runserver 0.0.0.0:8082
+
+
+
+
+git add .
+
+git commit -m "django polls update"
+
+git push
+
+
+python manage.py runserver
+
+read

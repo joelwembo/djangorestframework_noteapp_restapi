@@ -77,10 +77,36 @@ WSGI_APPLICATION = 'notes_app.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default' : {
-      'ENGINE' : 'djongo',
-      'NAME' : 'notes_database'
-   }
+    'default' : { },
+   'mongodb': {
+        'ENGINE': 'djongo', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'notes_database'                   # Or path to database file if using sqlite3.
+    },
+   'polls': {
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'sqlite3.db'                   # Or path to database file if using sqlite3.
+    },
+    'customers': {
+        'NAME': 'customer_data',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'mysql_cust',
+        'PASSWORD': 'veryPriv@ate',
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',
+    },
+    'replica1': {
+        'NAME': 'replica1_name',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'mysql_user',
+        'PASSWORD': 'eggs',
+    },
+    'replica2': {
+        'NAME': 'replica2_name',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'mysql_user',
+        'PASSWORD': 'bacon',
+    }
+
 }
 
 

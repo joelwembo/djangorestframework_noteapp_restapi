@@ -76,3 +76,11 @@ Prepare Requirement doc for all tools and lib
 pip freeze 
 
 pip freeze > requirements.txt
+
+
+Managaning Multiple Database
+
+python manage.py migrate --database=polls
+
+python manage.py migrate --database=customers
+

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
-    'yellowpage'
+    'yellowpage',
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ DATABASES = {
 
 }
 
-default_database = environ.get('DJANGO_DATABASE', 'mongodb')
+default_database = environ.get('DJANGO_DATABASE', 'polls')
 DATABASES['default'] = DATABASES[default_database]
 
 # Password validation

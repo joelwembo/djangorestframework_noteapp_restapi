@@ -5,4 +5,5 @@ from django.contrib import admin
 
 from .models import Question
 
+# add tge aoo to admin
 admin.site.register(Question)
